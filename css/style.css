@@ -1,0 +1,50 @@
+﻿:root {
+    --blog-bg: #f8f9fa;
+    --blog-text: #1f2937;
+}
+
+body {
+    background: linear-gradient(180deg, #f8f9fa 0%, #eef2f7 100%);
+    color: var(--blog-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.post-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.post-placeholder {
+    width: 100%;
+    height: 260px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: repeating-linear-gradient(45deg, #e5e7eb, #e5e7eb 10px, #f3f4f6 10px, #f3f4f6 20px);
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.comment-item {
+    border-left: 4px solid #0d6efd;
+}
+
+.like-button {
+    user-select: none;
+}
+
+@media (max-width: 576px) {
+    .post-image,
+    .post-placeholder {
+        height: 200px;
+    }
+}
